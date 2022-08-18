@@ -183,40 +183,7 @@ section {
             
         }
     }
-    .glow::before, .glow::after{
-        content: "";
-        position: absolute;
-        left: 53px;
-        top: 37px;
-        background: linear-gradient(
-            -45deg,
-            #00ff66,
-            #00ffff,
-            #ff00ff,
-            #ff0099,
-            #099fff
-        );
-        background-size: 400%;
-        height: calc(92% + 5px);
-        width: calc(70% + 4px);
-        z-index: -1;
-        animation: change 40s linear infinite;
-    }
-    @keyframes change {
-        0%{
-            background-position: 0 0;
-        }
-        50%{
-            background-position: 400% 0;
-        }
-        100%{
-            background-position: 0 0;
-        }
-    }
-    .glow::after{
-        filter: blur(40px);
-        opacity: .5s;
-    }
+    
     .right-header {
         display: flex;
         flex-direction: column;
